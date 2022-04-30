@@ -16,6 +16,19 @@ console.log(d.getDay()); // 0
             theme={vs2015}
           />
         </div>
+        <p>You can use an array to display the name of the weekday:</p>
+        <div className="code-block">
+          <CopyBlock
+            text={`const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const d = new Date();
+let day = days[d.getDay()];
+console.log(day); // Sunday
+`}
+            language={'javascript'}
+            showLineNumbers={false}
+            theme={vs2015}
+          />
+        </div>
       </div>
     </div>
   );
