@@ -768,6 +768,12 @@ export const sidebarMenuItems = [
         path: '/helpers/date-formats/get-milli-seconds',
         main: 9,
       },
+      {
+        id: '10.0',
+        title: 'Get Day',
+        path: '/helpers/date-formats/get-day',
+        main: 9,
+      },
     ],
   },
 ];
