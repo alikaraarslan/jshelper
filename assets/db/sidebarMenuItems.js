@@ -762,6 +762,12 @@ export const sidebarMenuItems = [
         path: '/helpers/date-formats/get-seconds',
         main: 9,
       },
+      {
+        id: '9.9',
+        title: 'Get Milli Seconds',
+        path: '/helpers/date-formats/get-milli-seconds',
+        main: 9,
+      },
     ],
   },
 ];
