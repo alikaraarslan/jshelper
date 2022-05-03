@@ -751,9 +751,15 @@ export const sidebarMenuItems = [
         main: 9,
       },
       {
-        id: '9.6',
-        title: 'Get Hours',
-        path: '/helpers/date-formats/get-hours',
+        id: '9.7',
+        title: 'Get Minutes',
+        path: '/helpers/date-formats/get-minutes',
+        main: 9,
+      },
+      {
+        id: '9.8',
+        title: 'Get Seconds',
+        path: '/helpers/date-formats/get-seconds',
         main: 9,
       },
     ],
