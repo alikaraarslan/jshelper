@@ -1,9 +1,9 @@
 import { CopyBlock, vs2015 } from 'react-code-blocks';
 
-const GetMonth = () => {
+const GetHours = () => {
   return (
     <div className="content-item">
-      <h2>GetMonth()</h2>
+      <h2>GetHours()</h2>
       <div className="desc">
         <p>
           The getHours() method returns the hours of a date as a number (0-23):
@@ -23,4 +23,4 @@ console.log(d.getHours()); // 23
   );
 };
 
-export default GetMonth;
+export default GetHours;
