@@ -750,6 +750,12 @@ export const sidebarMenuItems = [
         path: '/helpers/date-formats/get-month',
         main: 9,
       },
+      {
+        id: '9.6',
+        title: 'Get Hours',
+        path: '/helpers/date-formats/get-hours',
+        main: 9,
+      },
     ],
   },
 ];
