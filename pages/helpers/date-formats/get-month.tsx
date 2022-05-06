@@ -20,6 +20,19 @@ console.log(d.getMonth() + 1); // 7
             theme={vs2015}
           />
         </div>
+        <p>You can use an array to display the name of the month:</p>
+        <div className="code-block">
+          <CopyBlock
+            text={`cconst months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const d = new Date();
+let month = months[d.getMonth()];
+console.log(month); // July
+`}
+            language={'javascript'}
+            showLineNumbers={false}
+            theme={vs2015}
+          />
+        </div>
       </div>
     </div>
   );
