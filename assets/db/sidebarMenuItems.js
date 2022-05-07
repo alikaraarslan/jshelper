@@ -744,6 +744,12 @@ export const sidebarMenuItems = [
         path: '/helpers/date-formats/get-full-year',
         main: 9,
       },
+      {
+        id: '9.6',
+        title: 'Get Month',
+        path: '/helpers/date-formats/get-month',
+        main: 9,
+      },
     ],
   },
 ];
