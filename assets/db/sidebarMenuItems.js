@@ -738,6 +738,12 @@ export const sidebarMenuItems = [
         path: '/helpers/date-formats/date-time',
         main: 9,
       },
+      {
+        id: '9.5',
+        title: 'Get Full Year',
+        path: '/helpers/date-formats/get-full-year',
+        main: 9,
+      },
     ],
   },
 ];
