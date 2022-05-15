@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle(({ theme }) => ({
   body: {
     backgroundColor: theme.colors.bg,
     fontFamily: theme.fontFamily.body,
-    color: theme.colors.textPrimary,
     height: '100%',
   },
   button: {

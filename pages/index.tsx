@@ -1,7 +1,7 @@
-import type { NextPage } from "next";
+import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
-  return <>Hello Js-Helper</>;
+  return <>Body</>;
 };
 
 export default Home;

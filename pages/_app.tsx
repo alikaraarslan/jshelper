@@ -1,9 +1,10 @@
-import StyledThemeProvider from '../styles/ThemeProvider';
+import Layout from '../components/Layout';
+
 function MyApp({ Component, pageProps }: any) {
   return (
-    <StyledThemeProvider>
+    <Layout>
       <Component {...pageProps} />
-    </StyledThemeProvider>
+    </Layout>
   );
 }
 
