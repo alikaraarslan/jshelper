@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const IntroWrapper = styled.div`
@@ -29,6 +30,8 @@ const IntroWrapper = styled.div`
     font-size: 16px;
     height: 45px;
     line-height: 0;
+    font-weight: 600;
+    cursor: pointer;
   }
 `;
 
@@ -40,9 +43,9 @@ const Home: NextPage = () => {
         We are frontend developers. You can find anything on this site about
         Javascript.
       </p>
-      <a href="/helpers/loops/for-js-loops" className="link">
-        Start Learning
-      </a>
+      <Link href="/helpers/loops/for-js-loops">
+        <span className="link">Start Learning</span>
+      </Link>
     </IntroWrapper>
   );
 };

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Link from 'next/link';
 import Collapse, { Panel } from 'rc-collapse';
 require('rc-collapse/assets/index.css');
 import motion from '../utils/motionUtil';
@@ -265,7 +266,7 @@ const Sidebar = () => {
                     key={subIdx}
                     onClick={() => handleActiveAcc(subItem.path)}
                   >
-                    <a href={subItem.path}>{subItem.title}</a>
+                    <Link href={subItem.path}>{subItem.title}</Link>
                   </li>
                 ))}
               </ul>
