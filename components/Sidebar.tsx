@@ -94,34 +94,31 @@ const sidebarMenuItems = [
   {
     id: '1',
     title: 'Js Loops Sheet',
-    path: '/js-loops-sheet',
     subItem: [
       {
         id: '1.1',
-        title: 'Js Loops Sheet 1.1',
-        path: '/js-loops-sheet/1-1',
+        title: 'Js For Loops',
+        path: '/helpers/loops/for-js-loops',
       },
       {
         id: '1.2',
-        title: 'Js Loops Sheet 1.2',
-        path: '/js-loops-sheet/1-2',
-      },
-    ],
-  },
-  {
-    id: '2',
-    title: 'Js Es6 Cheat Sheet',
-    path: '/js-es6-cheat-sheet',
-    subItem: [
-      {
-        id: '2.1',
-        title: 'Js Es6 Cheat Sheet 1.1',
-        path: '/js-es6-cheat-sheet/1-1',
+        title: 'Js Do-While Loops',
+        path: '/helpers/loops/do-while-js-loops',
       },
       {
-        id: '2.2',
-        title: 'Js Es6 Cheat Sheet 1.2',
-        path: '/js-es6-cheat-sheet/1-2',
+        id: '1.3',
+        title: 'Js While Loops',
+        path: '/helpers/loops/while-js-loops',
+      },
+      {
+        id: '1.4',
+        title: 'Js For-in Loops',
+        path: '/helpers/loops/for-in-js-loops',
+      },
+      {
+        id: '1.5',
+        title: 'Js For-of Loops',
+        path: '/helpers/loops/for-of-js-loops',
       },
     ],
   },
@@ -142,12 +139,12 @@ const Sidebar = () => {
             <Panel
               header={<>{item.title}</>}
               headerClass="my-header-class"
-              key={idx}
+              key={idx + 1}
             >
               <ul>
                 {item.subItem.map((subItem: any, subIdx: number) => (
                   <li key={subIdx}>
-                    <a href={'#'}>{subItem.title}</a>
+                    <a href={subItem.path}>{subItem.title}</a>
                   </li>
                 ))}
               </ul>
