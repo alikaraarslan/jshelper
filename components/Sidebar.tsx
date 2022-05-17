@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import Collapse, { Panel } from 'rc-collapse';
 require('rc-collapse/assets/index.css');
 import motion from '../utils/motionUtil';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -57,6 +59,8 @@ const CollapseWrapper = styled<any>(Collapse)`
           list-style: none;
           li {
             padding: 3px 0;
+            padding-left: 22px;
+            font-size: 14px;
           }
         }
       }
@@ -94,6 +98,7 @@ const sidebarMenuItems = [
   {
     id: '1',
     title: 'Js Loops Sheet',
+    key: 'loops',
     subItem: [
       {
         id: '1.1',
@@ -122,9 +127,122 @@ const sidebarMenuItems = [
       },
     ],
   },
+  {
+    id: '2',
+    title: 'Js ES6 Cheat Sheet',
+    key: 'es6',
+    subItem: [
+      {
+        id: '2.1',
+        title: 'Js Arrow Functions',
+        path: '/helpers/es6/arrow-functions',
+      },
+      {
+        id: '2.2',
+        title: 'Default parameters',
+        path: '/helpers/es6/default-parameters',
+      },
+      {
+        id: '2.3',
+        title: 'Let Scope',
+        path: '/helpers/es6/let-scope',
+      },
+      {
+        id: '2.4',
+        title: 'Const Scope',
+        path: '/helpers/es6/const-scope',
+      },
+      {
+        id: '2.5',
+        title: 'Multiline strings',
+        path: '/helpers/es6/multiline-strings',
+      },
+      {
+        id: '2.6',
+        title: 'Template strings',
+        path: '/helpers/es6/template-strings',
+      },
+      {
+        id: '2.7',
+        title: 'Exponent operator',
+        path: '/helpers/es6/exponent-operator',
+      },
+      {
+        id: '2.8',
+        title: 'Spread operator',
+        path: '/helpers/es6/spread-operator',
+      },
+      {
+        id: '2.9',
+        title: 'String includes()',
+        path: '/helpers/es6/string-includes',
+      },
+      {
+        id: '2.10',
+        title: 'String startsWith()',
+        path: '/helpers/es6/string-starts-with',
+      },
+      {
+        id: '2.11',
+        title: 'String repeat()',
+        path: '/helpers/es6/string-repeat',
+      },
+      {
+        id: '2.12',
+        title: 'Destructuring array',
+        path: '/helpers/es6/destructuring-array',
+      },
+      {
+        id: '2.13',
+        title: 'Destructuring object',
+        path: '/helpers/es6/destructuring-object',
+      },
+      {
+        id: '2.14',
+        title: 'Object property assignment',
+        path: '/helpers/es6/object-property-assignment',
+      },
+      {
+        id: '2.15',
+        title: 'Object.assign()',
+        path: '/helpers/es6/object-assign',
+      },
+      {
+        id: '2.16',
+        title: 'Promises with finally',
+        path: '/helpers/es6/promises-with-finally',
+      },
+      {
+        id: '2.17',
+        title: 'Object function assignment',
+        path: '/helpers/es6/object-function-assignment',
+      },
+      {
+        id: '2.18',
+        title: 'Object.entries()',
+        path: '/helpers/es6/object-entries',
+      },
+      {
+        id: '2.19',
+        title: 'Object Spread operator',
+        path: '/helpers/es6/object-spread-operator',
+      },
+      {
+        id: '2.20',
+        title: 'Destructuring Nested Objects',
+        path: '/helpers/es6/destructuring-nested-objects',
+      },
+    ],
+  },
 ];
 
 const Sidebar = () => {
+  const [isActive, setIsActive] = useState(false);
+  const router = useRouter();
+  const handleActiveAcc = (route: any) => {
+    console.log('route', route);
+  };
+  console.log('router--->', router.pathname);
   return (
     <SidebarWrapper>
       <div className="title">Js Helper</div>
@@ -143,7 +261,10 @@ const Sidebar = () => {
             >
               <ul>
                 {item.subItem.map((subItem: any, subIdx: number) => (
-                  <li key={subIdx}>
+                  <li
+                    key={subIdx}
+                    onClick={() => handleActiveAcc(subItem.path)}
+                  >
                     <a href={subItem.path}>{subItem.title}</a>
                   </li>
                 ))}
