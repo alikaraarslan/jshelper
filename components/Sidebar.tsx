@@ -359,6 +359,23 @@ const sidebarMenuItems = [
       },
     ],
   },
+  {
+    id: '5',
+    title: 'JavaScript Async/Await',
+    key: 'async-await',
+    subItem: [
+      {
+        id: '5.1',
+        title: 'Async',
+        path: '/helpers/async-await/async',
+      },
+      {
+        id: '5.2',
+        title: 'Await',
+        path: '/helpers/async-await/await',
+      },
+    ],
+  },
 ];
 
 const Sidebar = () => {
