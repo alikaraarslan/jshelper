@@ -376,6 +376,33 @@ const sidebarMenuItems = [
       },
     ],
   },
+  {
+    id: '6',
+    title: 'JavaScript API Calls',
+    key: 'api-calls',
+    subItem: [
+      {
+        id: '6.1',
+        title: 'XML HTTP Request',
+        path: '/helpers/api-calls/xml-http-request',
+      },
+      {
+        id: '6.2',
+        title: 'Fetch',
+        path: '/helpers/api-calls/fetch',
+      },
+      {
+        id: '6.3',
+        title: 'Axios',
+        path: '/helpers/api-calls/axios',
+      },
+      {
+        id: '6.4',
+        title: 'JQuery AJAX',
+        path: '/helpers/api-calls/jquery-ajax',
+      },
+    ],
+  },
 ];
 
 const Sidebar = () => {
