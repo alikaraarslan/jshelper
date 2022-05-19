@@ -130,7 +130,7 @@ const sidebarMenuItems = [
   },
   {
     id: '2',
-    title: 'Js ES6 Cheat Sheet',
+    title: 'Js ES6 Sheet',
     key: 'es6',
     subItem: [
       {
@@ -232,6 +232,33 @@ const sidebarMenuItems = [
         id: '2.20',
         title: 'Destructuring Nested Objects',
         path: '/helpers/es6/destructuring-nested-objects',
+      },
+    ],
+  },
+  {
+    id: '3',
+    title: 'JavaScript Arrays Sheet',
+    key: 'arrays',
+    subItem: [
+      {
+        id: '3.1',
+        title: 'Assigning array items to variables',
+        path: '/helpers/array-destructuring/assigning-array-items-to-variables',
+      },
+      {
+        id: '3.2',
+        title: 'Skipping items',
+        path: '/helpers/array-destructuring/skipping-items',
+      },
+      {
+        id: '3.3',
+        title: 'Assigning the first values, storing the rest together',
+        path: '/helpers/array-destructuring/assigning-the-first-values-storing-the-rest-together',
+      },
+      {
+        id: '3.4',
+        title: 'Swapping variables',
+        path: '/helpers/array-destructuring/swapping-variables',
       },
     ],
   },
