@@ -262,6 +262,103 @@ const sidebarMenuItems = [
       },
     ],
   },
+  {
+    id: '4',
+    title: 'JavaScript Strings Sheet',
+    key: 'strings',
+    subItem: [
+      {
+        id: '4.1',
+        title: 'charAt()',
+        path: '/helpers/strings/char-at',
+      },
+      {
+        id: '4.2',
+        title: 'concat()',
+        path: '/helpers/strings/concat',
+      },
+      {
+        id: '4.3',
+        title: 'indexOf()',
+        path: '/helpers/strings/index-of',
+      },
+      {
+        id: '4.4',
+        title: 'lastIndexOf()',
+        path: '/helpers/strings/last-index-of',
+      },
+      {
+        id: '4.5',
+        title: 'replace()',
+        path: '/helpers/strings/replace',
+      },
+      {
+        id: '4.6',
+        title: 'search()',
+        path: '/helpers/strings/search',
+      },
+      {
+        id: '4.7',
+        title: 'slice(start, end)',
+        path: '/helpers/strings/slice',
+      },
+      {
+        id: '4.8',
+        title: 'substr(start, length)',
+        path: '/helpers/strings/substr',
+      },
+      {
+        id: '4.9',
+        title: 'substring(start, end)',
+        path: '/helpers/strings/substring',
+      },
+      {
+        id: '4.10',
+        title: 'toUpperCase()',
+        path: '/helpers/strings/to-upper-case',
+      },
+      {
+        id: '4.11',
+        title: 'toLowerCase()',
+        path: '/helpers/strings/to-lower-case',
+      },
+      {
+        id: '4.12',
+        title: 'valueOf()',
+        path: '/helpers/strings/value-of',
+      },
+      {
+        id: '4.13',
+        title: 'trim()',
+        path: '/helpers/strings/trim',
+      },
+      {
+        id: '4.14',
+        title: 'toString()',
+        path: '/helpers/strings/to-string',
+      },
+      {
+        id: '4.15',
+        title: 'includes()',
+        path: '/helpers/strings/includes',
+      },
+      {
+        id: '4.16',
+        title: 'charCodeAt()',
+        path: '/helpers/strings/char-code-at',
+      },
+      {
+        id: '4.17',
+        title: 'match()',
+        path: '/helpers/strings/match',
+      },
+      {
+        id: '4.18',
+        title: 'split()',
+        path: '/helpers/strings/split',
+      },
+    ],
+  },
 ];
 
 const Sidebar = () => {
