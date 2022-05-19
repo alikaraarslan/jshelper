@@ -37,6 +37,27 @@ const CollapseWrapper = styled<any>(Collapse)`
     border-radius: 12px;
     &.rc-collapse-item-active {
       background: #3e3e3e;
+      max-height: calc(100vh - 400px);
+      overflow-y: auto;
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #3e3e3e;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
       .rc-collapse-header {
         .custom-arrow {
           tranform: rotate(90deg);
@@ -62,6 +83,10 @@ const CollapseWrapper = styled<any>(Collapse)`
             padding: 3px 0;
             padding-left: 22px;
             font-size: 14px;
+            a {
+              width: 100%;
+              display: block;
+            }
           }
         }
       }
@@ -243,22 +268,22 @@ const sidebarMenuItems = [
       {
         id: '3.1',
         title: 'Assigning array items to variables',
-        path: '/helpers/array-destructuring/assigning-array-items-to-variables',
+        path: '/helpers/arrays/assigning-array-items-to-variables',
       },
       {
         id: '3.2',
         title: 'Skipping items',
-        path: '/helpers/array-destructuring/skipping-items',
+        path: '/helpers/arrays/skipping-items',
       },
       {
         id: '3.3',
         title: 'Assigning the first values, storing the rest together',
-        path: '/helpers/array-destructuring/assigning-the-first-values-storing-the-rest-together',
+        path: '/helpers/arrays/assigning-the-first-values-storing-the-rest-together',
       },
       {
         id: '3.4',
         title: 'Swapping variables',
-        path: '/helpers/array-destructuring/swapping-variables',
+        path: '/helpers/arrays/swapping-variables',
       },
     ],
   },
@@ -406,12 +431,6 @@ const sidebarMenuItems = [
 ];
 
 const Sidebar = () => {
-  const [isActive, setIsActive] = useState(false);
-  const router = useRouter();
-  const handleActiveAcc = (route: any) => {
-    console.log('route', route);
-  };
-  console.log('router--->', router.pathname);
   return (
     <SidebarWrapper>
       <div className="title">Js Helper</div>
@@ -430,10 +449,7 @@ const Sidebar = () => {
             >
               <ul>
                 {item.subItem.map((subItem: any, subIdx: number) => (
-                  <li
-                    key={subIdx}
-                    onClick={() => handleActiveAcc(subItem.path)}
-                  >
+                  <li key={subIdx}>
                     <Link href={subItem.path}>{subItem.title}</Link>
                   </li>
                 ))}

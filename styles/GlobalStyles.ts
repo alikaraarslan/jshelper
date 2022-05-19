@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle(({ theme }) => ({
     backgroundColor: theme.colors.bg,
     fontFamily: theme.fontFamily.body,
     height: '100%',
+    overflow: 'hidden',
   },
   button: {
     border: 'none',
