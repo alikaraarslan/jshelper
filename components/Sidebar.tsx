@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Link from 'next/link';
 import Collapse, { Panel } from 'rc-collapse';
 require('rc-collapse/assets/index.css');
@@ -10,11 +10,8 @@ const SidebarWrapper = styled.div`
   align-items: flex-start;
   flex-direction: column;
   width: 300px;
-  height: calc(100vh - 60px);
-  background: #050505;
+  height: 100vh;
   padding: 20px;
-  color: white;
-  border-radius: 12px;
   .title {
     font-size: 24px;
     margin-bottom: 20px;
@@ -35,15 +32,12 @@ const CollapseWrapper = styled<any>(Collapse)`
     padding: 12px;
     border-radius: 12px;
     &.rc-collapse-item-active {
-      background: #3e3e3e;
     }
     .rc-collapse-header {
       padding: 0 !important;
-      color: white;
     }
     .rc-collapse-content {
       background: transparent;
-      color: white;
       padding: 0;
       .rc-collapse-content-box {
         margin: 0;
@@ -121,8 +115,12 @@ const expandIcon = ({ isActive }: any) => {
 
 const Sidebar = ({ theme }: any) => {
   return (
-    <SidebarWrapper theme={theme}>
-      <div className="title">Js Helper</div>
+    <SidebarWrapper theme={theme} className="sidebar">
+      <div className="title">
+        <Link href="/">
+          <a>Js Helper</a>
+        </Link>
+      </div>
       <div className="sidebar-content">
         <CollapseWrapper
           theme={theme}

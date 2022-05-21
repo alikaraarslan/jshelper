@@ -10,7 +10,6 @@ const IntroWrapper = styled.div`
   height: 100%;
   h1 {
     font-size: 24px;
-    color: #050505;
   }
   p {
     width: 80%;
@@ -19,11 +18,9 @@ const IntroWrapper = styled.div`
     margin-bottom: 30px;
     font-size: 18px;
   }
-  .link {
-    background: #050505;
+  .button-link {
     padding: 0 20px;
     border-radius: 12px;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +41,7 @@ const Home: NextPage = () => {
         Javascript.
       </p>
       <Link href="/helpers/loops/for-js-loops">
-        <span className="link">Start Learning</span>
+        <span className="button-link">Start Learning</span>
       </Link>
     </IntroWrapper>
   );

@@ -6,10 +6,6 @@ import Sidebar from './Sidebar';
 
 const LayoutWrapper = styled.div`
   display: flex;
-  width: calc(100% - 60px);
-  margin: 30px;
-  background: rgba(224, 224, 233, 0.3);
-  border-radius: 12px;
   .page {
     flex: 1;
     flex-direction: column;
@@ -18,24 +14,25 @@ const LayoutWrapper = styled.div`
 `;
 
 export const lightTheme = {
-  body: '#f9f9fa',
-  text: '#050505',
+  bg: 'white',
+  bgDark: 'white',
+  text: 'black',
 };
 export const darkTheme = {
-  // body: '#050505',
-  // text: '#f9f9fa',
-  body: '#f9f9fa',
-  text: '#050505',
+  bg: '#373c44',
+  bgDark: '#222831',
+  text: '#f9f9fa',
 };
 
 const Layout: React.FC = ({ children }) => {
-  const [theme, setTheme] = useState<string>('light');
+  const [theme, setTheme] = useState<string>('dark');
   const isDarkTheme = theme === 'dark';
   const toggleTheme = () => setTheme(isDarkTheme ? 'light' : 'dark');
+  const resTheme = isDarkTheme ? darkTheme : lightTheme;
   return (
-    <StyledThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-      <LayoutWrapper>
-        <Sidebar theme={!isDarkTheme ? darkTheme : lightTheme} />
+    <StyledThemeProvider theme={resTheme}>
+      <LayoutWrapper theme={resTheme}>
+        <Sidebar theme={!resTheme} />
         <div className="page">
           <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
           {children}

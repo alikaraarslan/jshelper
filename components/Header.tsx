@@ -19,11 +19,11 @@ const Header = ({ toggleTheme, isDarkTheme }: Props) => {
         <button onClick={toggleTheme}>
           {isDarkTheme ? (
             <span aria-label="Light mode" role="img">
-              🌞Light
+              🌞Set Light
             </span>
           ) : (
             <span aria-label="Dark mode" role="img">
-              🌜Dark
+              🌜Set Dark
             </span>
           )}
         </button>

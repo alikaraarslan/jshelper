@@ -16,6 +16,36 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
     height: '100%',
     overflow: 'hidden',
   },
+  '.sidebar': {
+    background: theme.bgDark,
+    transition: '200ms ease-in',
+    color: theme.text,
+    '.rc-collapse > .rc-collapse-item > .rc-collapse-header': {
+      transition: '200ms ease-in',
+      color: theme.text,
+    },
+    '.rc-collapse-content': {
+      transition: '200ms ease-in',
+      color: theme.text,
+    },
+    '.rc-collapse-item.rc-collapse-item-active': {
+      transition: '200ms ease-in',
+      background: theme.bg,
+    },
+  },
+  '.page': {
+    transition: '200ms ease-in',
+    background: theme.bg,
+    color: theme.text,
+  },
+  '.button-link': {
+    transition: '200ms ease-in',
+    color: theme.text,
+    background: theme.bgDark,
+    '&:hover': {
+      background: '#1b2028',
+    },
+  },
   button: {
     border: 'none',
   },
