@@ -6,11 +6,28 @@ const HeaderWrapper = styled.div`
   align-items: flex-start;
 `;
 
-const Header = () => {
+type Props = {
+  toggleTheme: () => void;
+  isDarkTheme: boolean;
+};
+
+const Header = ({ toggleTheme, isDarkTheme }: Props) => {
   return (
     <HeaderWrapper>
       <div>Search Box</div>
-      <div>Light / Dark Mode</div>
+      <div>
+        <button onClick={toggleTheme}>
+          {isDarkTheme ? (
+            <span aria-label="Light mode" role="img">
+              🌞Light
+            </span>
+          ) : (
+            <span aria-label="Dark mode" role="img">
+              🌜Dark
+            </span>
+          )}
+        </button>
+      </div>
     </HeaderWrapper>
   );
 };

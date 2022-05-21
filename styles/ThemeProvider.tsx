@@ -1,15 +1,16 @@
 import { ThemeProvider as Provider } from 'styled-components';
 
 import GlobalStyle from './GlobalStyles';
-import defaultTheme from './theme';
 
-const StyledThemeProvider = ({ children }: any) => (
-  <Provider theme={defaultTheme}>
-    <>
-      <GlobalStyle />
-      {children}
-    </>
-  </Provider>
-);
+const StyledThemeProvider = ({ theme, children }: any) => {
+  return (
+    <Provider theme={theme}>
+      <>
+        <GlobalStyle theme={theme} />
+        {children}
+      </>
+    </Provider>
+  );
+};
 
 export default StyledThemeProvider;

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import StyledThemeProvider from '../styles/ThemeProvider';
 import Header from './Header';
@@ -16,13 +17,27 @@ const LayoutWrapper = styled.div`
   }
 `;
 
+export const lightTheme = {
+  body: '#f9f9fa',
+  text: '#050505',
+};
+export const darkTheme = {
+  // body: '#050505',
+  // text: '#f9f9fa',
+  body: '#f9f9fa',
+  text: '#050505',
+};
+
 const Layout: React.FC = ({ children }) => {
+  const [theme, setTheme] = useState<string>('light');
+  const isDarkTheme = theme === 'dark';
+  const toggleTheme = () => setTheme(isDarkTheme ? 'light' : 'dark');
   return (
-    <StyledThemeProvider>
+    <StyledThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
       <LayoutWrapper>
-        <Sidebar />
+        <Sidebar theme={!isDarkTheme ? darkTheme : lightTheme} />
         <div className="page">
-          <Header />
+          <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
           {children}
         </div>
       </LayoutWrapper>

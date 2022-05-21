@@ -4,7 +4,6 @@ import Collapse, { Panel } from 'rc-collapse';
 require('rc-collapse/assets/index.css');
 import motion from '../utils/motionUtil';
 import { sidebarMenuItems } from '../assets/db/sidebarMenuItems';
-import { useState } from 'react';
 
 const SidebarWrapper = styled.div`
   display: flex;
@@ -57,7 +56,7 @@ const CollapseWrapper = styled<any>(Collapse)`
           overflow-y: auto;
           /* width */
           ::-webkit-scrollbar {
-            width: 10px;
+            width: 5px;
           }
 
           /* Track */
@@ -120,16 +119,16 @@ const expandIcon = ({ isActive }: any) => {
   );
 };
 
-const Sidebar = () => {
-  const [activeKey, setActiveKey] = useState(sidebarMenuItems[0].id);
+const Sidebar = ({ theme }: any) => {
   return (
-    <SidebarWrapper>
+    <SidebarWrapper theme={theme}>
       <div className="title">Js Helper</div>
       <div className="sidebar-content">
         <CollapseWrapper
+          theme={theme}
           accordion={true}
           openMotion={motion || null}
-          defaultActiveKey={activeKey}
+          defaultActiveKey={1}
           expandIcon={expandIcon}
         >
           {sidebarMenuItems.map((item: any, idx: number) => (
