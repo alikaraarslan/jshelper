@@ -14,8 +14,8 @@ const LayoutWrapper = styled.div`
 `;
 
 export const lightTheme = {
-  bg: 'white',
-  bgDark: 'white',
+  bg: '#e9e9e9',
+  bgDark: '#d5d5d5',
   text: 'black',
 };
 export const darkTheme = {

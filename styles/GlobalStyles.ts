@@ -1,3 +1,4 @@
+import { darken } from 'polished';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
@@ -43,7 +44,7 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
     color: theme.text,
     background: theme.bgDark,
     '&:hover': {
-      background: '#1b2028',
+      background: darken(0.1, theme.bgDark),
     },
   },
   button: {
