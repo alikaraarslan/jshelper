@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import Search from './Search';
 import Theme from './Theme';
 
 const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width: calc(100% - 40px);
   padding: 20px;
   margin: 20px auto;
@@ -19,7 +20,7 @@ type Props = {
 const Header = ({ toggleTheme, isDarkTheme }: Props) => {
   return (
     <HeaderWrapper className="header">
-      <div>Search Box</div>
+      <Search />
       <Theme toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
     </HeaderWrapper>
   );

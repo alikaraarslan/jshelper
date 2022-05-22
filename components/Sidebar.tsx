@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Link from 'next/link';
 import Collapse, { Panel } from 'rc-collapse';
 require('rc-collapse/assets/index.css');
@@ -12,6 +12,7 @@ const SidebarWrapper = styled.div`
   width: 300px;
   height: 100vh;
   padding: 20px;
+  transition: 300ms;
   .title {
     font-size: 24px;
     margin-bottom: 20px;
@@ -32,11 +33,14 @@ const CollapseWrapper = styled<any>(Collapse)`
     padding: 12px;
     border-radius: 12px;
     &.rc-collapse-item-active {
+      transition: 300ms;
     }
     .rc-collapse-header {
       padding: 0 !important;
+      transition: 300ms;
     }
     .rc-collapse-content {
+      transition: 300ms;
       background: transparent;
       padding: 0;
       .rc-collapse-content-box {

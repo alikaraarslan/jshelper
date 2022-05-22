@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
   body: {
     backgroundColor: theme.body,
     color: theme.text,
-    transition: 'background 0.2s ease-in, color 0.2s ease-in',
+    transition: 'transform 0.2s',
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,Ubuntu, Cantarell, "Helvetica Neue", sans-serif;',
     height: '100%',
@@ -19,28 +19,23 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
   },
   '.sidebar': {
     background: theme.bgDark,
-    transition: '200ms ease-in',
     color: theme.text,
     '.rc-collapse > .rc-collapse-item > .rc-collapse-header': {
-      transition: '200ms ease-in',
       color: theme.text,
     },
     '.rc-collapse-content': {
-      transition: '200ms ease-in',
       color: theme.text,
     },
     '.rc-collapse-item.rc-collapse-item-active': {
-      transition: '200ms ease-in',
       background: theme.bg,
     },
   },
   '.page': {
-    transition: '200ms ease-in',
     background: theme.bg,
     color: theme.text,
   },
   '.button-link': {
-    transition: '200ms ease-in',
+    transition: '300ms',
     color: theme.text,
     background: theme.bgDark,
     '&:hover': {
@@ -62,6 +57,20 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
             },
           },
         },
+      },
+    },
+    '.search': {
+      input: {
+        background: theme.bg,
+        color: darken(0.15, theme.text),
+        '::placeholder': {
+          color: darken(0.15, theme.text),
+          opacity: 0.6,
+        },
+      },
+      '.search-button': {
+        background: theme.bg,
+        color: darken(0.15, theme.text),
       },
     },
   },

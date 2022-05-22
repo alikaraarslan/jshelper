@@ -9,8 +9,9 @@ const LayoutWrapper = styled.div`
   .page {
     flex: 1;
     flex-direction: column;
+    transition: 300ms;
     .content {
-      padding: 0 20px 20px;
+      padding: 0 20px 55px;
       height: calc(100% - 110px);
     }
   }
