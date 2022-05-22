@@ -19,11 +19,11 @@ const LayoutWrapper = styled.div`
 
 export const lightTheme = {
   bg: '#e9e9e9',
-  bgDark: '#d5d5d5',
+  bgDark: '#dfdfdf',
   text: 'black',
 };
 export const darkTheme = {
-  bg: '#373c44',
+  bg: '#1e232a',
   bgDark: '#222831',
   text: '#f9f9fa',
 };
