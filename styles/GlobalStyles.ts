@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,Ubuntu, Cantarell, "Helvetica Neue", sans-serif;',
     height: '100%',
-    overflow: 'hidden',
   },
   '.sidebar': {
     background: theme.bgDark,
@@ -39,7 +38,7 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
     color: theme.text,
     background: theme.bgDark,
     '&:hover': {
-      background: darken(0.02, theme.bgDark),
+      background: darken(0.05, theme.bgDark),
     },
   },
   '.header': {
