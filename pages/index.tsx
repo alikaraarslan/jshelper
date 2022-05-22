@@ -37,7 +37,7 @@ const Home: NextPage = () => {
     <IntroWrapper>
       <h1>Hello!</h1>
       <p>
-        We are frontend developers. You can find anything on this site about
+        We are software developers. You can find anything on this site about
         Javascript.
       </p>
       <Link href="/helpers/loops/for-js-loops">

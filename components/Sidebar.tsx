@@ -52,22 +52,15 @@ const CollapseWrapper = styled<any>(Collapse)`
           list-style: none;
           max-height: calc(100vh - 430px);
           overflow-y: auto;
-          /* width */
           ::-webkit-scrollbar {
             width: 5px;
           }
-
-          /* Track */
           ::-webkit-scrollbar-track {
             background: #3e3e3e;
           }
-
-          /* Handle */
           ::-webkit-scrollbar-thumb {
             background: #888;
           }
-
-          /* Handle on hover */
           ::-webkit-scrollbar-thumb:hover {
             background: #555;
           }

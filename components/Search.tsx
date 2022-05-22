@@ -11,17 +11,17 @@ const SearchWrapper = styled.div`
     box-shadow: none;
     height: 32px;
     padding: 0 10px;
-    border-radius: 12px 0 0 12px;
-    color: white;
+    border-radius: 8px 0 0 8px;
     transition: 300ms;
     ::placeholder {
       opacity: 0.6;
+      transition: 300ms;
     }
   }
   .search-button {
     height: 32px;
     width: 40px;
-    border-radius: 0 12px 12px 0;
+    border-radius: 0 8px 8px 0;
     cursor: pointer;
     transition: 300ms;
     svg {

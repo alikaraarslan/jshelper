@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
     color: theme.text,
     background: theme.bgDark,
     '&:hover': {
-      background: darken(0.1, theme.bgDark),
+      background: darken(0.02, theme.bgDark),
     },
   },
   '.header': {
