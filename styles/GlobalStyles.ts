@@ -47,6 +47,24 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
       background: darken(0.1, theme.bgDark),
     },
   },
+  '.header': {
+    background: theme.bgDark,
+    '.slider': {
+      background: theme.bg,
+    },
+    input: {
+      '&:checked': {
+        '+': {
+          '.slider': {
+            background: darken(0.15, theme.bg),
+            '&:before': {
+              transform: 'translateX(20px)',
+            },
+          },
+        },
+      },
+    },
+  },
   button: {
     border: 'none',
   },

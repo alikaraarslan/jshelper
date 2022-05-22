@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import Theme from './Theme';
 
 const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  width: calc(100% - 40px);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
 `;
 
 type Props = {
@@ -13,21 +18,9 @@ type Props = {
 
 const Header = ({ toggleTheme, isDarkTheme }: Props) => {
   return (
-    <HeaderWrapper>
+    <HeaderWrapper className="header">
       <div>Search Box</div>
-      <div>
-        <button onClick={toggleTheme}>
-          {isDarkTheme ? (
-            <span aria-label="Light mode" role="img">
-              🌞Set Light
-            </span>
-          ) : (
-            <span aria-label="Dark mode" role="img">
-              🌜Set Dark
-            </span>
-          )}
-        </button>
-      </div>
+      <Theme toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
     </HeaderWrapper>
   );
 };

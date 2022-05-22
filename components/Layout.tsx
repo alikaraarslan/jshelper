@@ -9,7 +9,10 @@ const LayoutWrapper = styled.div`
   .page {
     flex: 1;
     flex-direction: column;
-    padding: 30px;
+    .content {
+      padding: 0 20px 20px;
+      height: calc(100% - 110px);
+    }
   }
 `;
 
@@ -35,7 +38,7 @@ const Layout: React.FC = ({ children }) => {
         <Sidebar theme={!resTheme} />
         <div className="page">
           <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-          {children}
+          <div className="content">{children}</div>
         </div>
       </LayoutWrapper>
     </StyledThemeProvider>
