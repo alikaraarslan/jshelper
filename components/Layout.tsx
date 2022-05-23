@@ -47,6 +47,9 @@ const LayoutWrapper = styled.div`
           }
           .code-block {
             margin: 20px 0;
+            > div {
+              display: flex;
+            }
           }
           ul {
             margin: 10px 0;
