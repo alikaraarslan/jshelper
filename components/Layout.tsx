@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import StyledThemeProvider from '../styles/ThemeProvider';
+import Footer from './Footer';
 import Header from './Header';
 import Sidebar from './Sidebar';
 
@@ -98,7 +99,10 @@ const Layout: React.FC = ({ children }) => {
         <Sidebar theme={!resTheme} />
         <div className="page">
           <Header toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
-          <div className="content">{children}</div>
+          <div className="content">
+            {children}
+            <Footer />
+          </div>
         </div>
       </LayoutWrapper>
     </StyledThemeProvider>
