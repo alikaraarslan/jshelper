@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { CopyBlock, vs2015 } from 'react-code-blocks';
 
 const DoWhileLoops = () => {
