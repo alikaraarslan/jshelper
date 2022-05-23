@@ -7,14 +7,17 @@ const FooterWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 12px;
   .btn-navigation {
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 8px;
-    transition: 300ms;
+    a {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 16px;
+      border-radius: 8px;
+      transition: 300ms;
+    }
   }
 `;
 
@@ -40,34 +43,41 @@ const Footer = () => {
     (f) => f.id === afterItemId.toFixed(1)
   );
 
-  console.log('beforeItem', beforeItem);
-  console.log('afterItem', afterItem);
-
   const isVisibleFooter = pathname !== '/';
   if (!isVisibleFooter) return null;
   return (
     <FooterWrapper>
       <div className="btn-navigation">
-        {beforeItem && (
-          <Link
-            href={`/${beforeItem?.path}`}
-            as={`/${beforeItem?.path}`}
-            passHref
+        <Link
+          href={beforeItem !== undefined ? `/${beforeItem?.path}` : '#'}
+          passHref
+        >
+          <a
+            style={
+              beforeItem === undefined
+                ? { pointerEvents: 'none', cursor: 'not-allowed' }
+                : {}
+            }
           >
-            <a>Previous Page</a>
-          </Link>
-        )}
+            Previous Page
+          </a>
+        </Link>
       </div>
       <div className="btn-navigation">
-        {afterItem && (
-          <Link
-            href={`/${afterItem?.path}`}
-            as={`/${afterItem?.path}`}
-            passHref
+        <Link
+          href={afterItem !== undefined ? `/${afterItem?.path}` : '#'}
+          passHref
+        >
+          <a
+            style={
+              afterItem === undefined
+                ? { pointerEvents: 'none', cursor: 'not-allowed' }
+                : {}
+            }
           >
-            <a>Next Page</a>
-          </Link>
-        )}
+            Next Page
+          </a>
+        </Link>
       </div>
     </FooterWrapper>
   );

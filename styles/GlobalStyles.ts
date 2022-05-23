@@ -77,10 +77,14 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
     border: 'none',
   },
   '.btn-navigation': {
-    background: theme.bgDark,
-    color: darken(0.15, theme.text),
+    a: {
+      background: theme.bgDark,
+      color: darken(0.15, theme.text),
+    },
     ':hover': {
-      background: darken(0.05, theme.bgDark),
+      a: {
+        background: darken(0.05, theme.bgDark),
+      },
     },
   },
   a: {
