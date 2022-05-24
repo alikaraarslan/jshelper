@@ -47,23 +47,23 @@ const Footer = () => {
   if (!isVisibleFooter) return null;
   return (
     <FooterWrapper>
-      <div className="btn-navigation">
+      <div
+        className="btn-navigation"
+        style={beforeItem === undefined ? { cursor: 'not-allowed' } : {}}
+      >
         <Link
           href={beforeItem !== undefined ? `/${beforeItem?.path}` : '#'}
           passHref
         >
-          <a
-            style={
-              beforeItem === undefined
-                ? { pointerEvents: 'none', cursor: 'not-allowed' }
-                : {}
-            }
-          >
+          <a style={beforeItem === undefined ? { pointerEvents: 'none' } : {}}>
             Previous Page
           </a>
         </Link>
       </div>
-      <div className="btn-navigation">
+      <div
+        className="btn-navigation"
+        style={afterItem === undefined ? { cursor: 'not-allowed' } : {}}
+      >
         <Link
           href={afterItem !== undefined ? `/${afterItem?.path}` : '#'}
           passHref
