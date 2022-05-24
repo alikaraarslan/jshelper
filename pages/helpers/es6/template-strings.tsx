@@ -20,18 +20,6 @@ const TemplateStrings = () => {
           substitution of the placeholders and then concatenate the parts into a
           single string.
         </p>
-        <div className="code-block">
-          <CopyBlock
-            text={`const name = 'World'
-const message = \`Hello ${name}\`
-console.log(message)
-// prints "Hello World"
-`}
-            language={'javascript'}
-            showLineNumbers={false}
-            theme={vs2015}
-          />
-        </div>
       </div>
     </div>
   );
