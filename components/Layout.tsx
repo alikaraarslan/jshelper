@@ -71,6 +71,12 @@ const LayoutWrapper = styled.div`
               border: none;
             }
           }
+          pre {
+            margin: 20px 0;
+            background: #222831;
+            padding: 10px;
+            border-radius: 8px;
+          }
         }
       }
     }
