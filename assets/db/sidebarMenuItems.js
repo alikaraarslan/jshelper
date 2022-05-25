@@ -101,11 +101,11 @@ export const sidebarMenuItems = [
         title: 'Destructuring object',
         path: '/helpers/es6/destructuring-object',
       },
-      // {
-      //   id: '3.4',
-      //   title: 'Object property assignment',
-      //   path: '/helpers/es6/object-property-assignment',
-      // },
+      {
+        id: '3.4',
+        title: 'Object property assignment',
+        path: '/helpers/es6/object-property-assignment',
+      },
       // {
       //   id: '3.5',
       //   title: 'Object.assign()',
