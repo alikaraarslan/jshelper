@@ -14,21 +14,6 @@ const DesctructuringArray = () => {
         <h3>Example - 1</h3>
         <div className="code-block">
           <CopyBlock
-            text={`let obj = {
-a: 55,
-b: 44
-};
-let { a, b } = obj;
-console.log(a); // 55
-console.log(b); // 44`}
-            language={'javascript'}
-            showLineNumbers={false}
-            theme={vs2015}
-          />
-        </div>
-        <h3>Example - 2</h3>
-        <div className="code-block">
-          <CopyBlock
             text={`let a, b, rest;
 [a, b] = [10, 20];
 
@@ -47,7 +32,7 @@ console.log(rest);
             theme={vs2015}
           />
         </div>
-        <h3>Example - 3</h3>
+        <h3>Example - 2</h3>
         <div className="code-block">
           <CopyBlock
             text={`let a, b, rest;
