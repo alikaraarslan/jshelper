@@ -121,11 +121,11 @@ export const sidebarMenuItems = [
         title: 'Object.entries()',
         path: '/helpers/es6/object-entries',
       },
-      // {
-      //   id: '3.8',
-      //   title: 'Object Spread operator',
-      //   path: '/helpers/es6/object-spread-operator',
-      // },
+      {
+        id: '3.8',
+        title: 'Object Spread operator',
+        path: '/helpers/es6/object-spread-operator',
+      },
       // {
       //   id: '3.9',
       //   title: 'Destructuring Nested Objects',
