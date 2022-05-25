@@ -81,11 +81,11 @@ export const sidebarMenuItems = [
         title: 'String includes()',
         path: '/helpers/es6/string-includes',
       },
-      // {
-      //   id: '3',
-      //   title: 'String startsWith()',
-      //   path: '/helpers/es6/string-starts-with',
-      // },
+      {
+        id: '3.0',
+        title: 'String startsWith()',
+        path: '/helpers/es6/string-starts-with',
+      },
       // {
       //   id: '3.1',
       //   title: 'String repeat()',
