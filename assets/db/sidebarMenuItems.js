@@ -106,11 +106,11 @@ export const sidebarMenuItems = [
         title: 'Object property assignment',
         path: '/helpers/es6/object-property-assignment',
       },
-      // {
-      //   id: '3.5',
-      //   title: 'Object.assign()',
-      //   path: '/helpers/es6/object-assign',
-      // },
+      {
+        id: '3.5',
+        title: 'Object.assign()',
+        path: '/helpers/es6/object-assign',
+      },
       // {
       //   id: '3.6',
       //   title: 'Promises with finally',
