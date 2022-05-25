@@ -76,11 +76,11 @@ export const sidebarMenuItems = [
         title: 'Spread operator',
         path: '/helpers/es6/spread-operator',
       },
-      // {
-      //   id: '2.9',
-      //   title: 'String includes()',
-      //   path: '/helpers/es6/string-includes',
-      // },
+      {
+        id: '2.9',
+        title: 'String includes()',
+        path: '/helpers/es6/string-includes',
+      },
       // {
       //   id: '3',
       //   title: 'String startsWith()',
