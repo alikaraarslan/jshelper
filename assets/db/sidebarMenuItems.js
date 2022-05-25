@@ -91,11 +91,11 @@ export const sidebarMenuItems = [
         title: 'String repeat()',
         path: '/helpers/es6/string-repeat',
       },
-      // {
-      //   id: '3.2',
-      //   title: 'Destructuring array',
-      //   path: '/helpers/es6/destructuring-array',
-      // },
+      {
+        id: '3.2',
+        title: 'Destructuring array',
+        path: '/helpers/es6/destructuring-array',
+      },
       // {
       //   id: '3.3',
       //   title: 'Destructuring object',
