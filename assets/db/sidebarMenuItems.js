@@ -116,23 +116,18 @@ export const sidebarMenuItems = [
         title: 'Promises with finally',
         path: '/helpers/es6/promises-with-finally',
       },
-      // {
-      //   id: '3.7',
-      //   title: 'Object function assignment',
-      //   path: '/helpers/es6/object-function-assignment',
-      // },
+      {
+        id: '3.7',
+        title: 'Object.entries()',
+        path: '/helpers/es6/object-entries',
+      },
       // {
       //   id: '3.8',
-      //   title: 'Object.entries()',
-      //   path: '/helpers/es6/object-entries',
-      // },
-      // {
-      //   id: '3.9',
       //   title: 'Object Spread operator',
       //   path: '/helpers/es6/object-spread-operator',
       // },
       // {
-      //   id: '4.0',
+      //   id: '3.9',
       //   title: 'Destructuring Nested Objects',
       //   path: '/helpers/es6/destructuring-nested-objects',
       // },
