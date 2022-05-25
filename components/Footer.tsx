@@ -9,14 +9,21 @@ const FooterWrapper = styled.div`
   align-items: center;
   margin-top: 12px;
   .btn-navigation {
-    a {
+    .navigation-text {
       height: 40px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      padding: 0 16px;
+      align-items: flex-start;
+      flex-direction: column;
       border-radius: 8px;
+      height: 60px;
+      padding: 15px;
       transition: 300ms;
+      span {
+        font-size: 12px;
+        opacity: 0.7;
+        margin-bottom: 4px;
+      }
     }
   }
 `;
@@ -24,7 +31,7 @@ const FooterWrapper = styled.div`
 const Footer = () => {
   const router = useRouter();
   const { pathname } = router;
-  console.log('router', router);
+
   const jsDirectoryName = pathname?.split?.('/')?.[2]?.split?.('/')?.[0];
   const currentMenuItem = sidebarMenuItems.find(
     (item) => item.key === jsDirectoryName
@@ -38,10 +45,13 @@ const Footer = () => {
     (f) => f.id === beforeItemId.toFixed(1)
   );
 
+  console.log('beforeItem', beforeItem);
+
   const afterItemId = Number(activeItem?.id) + Number(0.1);
   const afterItem = currentMenuItem?.subItem?.find(
     (f) => f.id === afterItemId.toFixed(1)
   );
+  console.log('afterItem', afterItem);
 
   const isVisibleFooter = pathname !== '/';
   if (!isVisibleFooter) return null;
@@ -55,7 +65,21 @@ const Footer = () => {
           href={beforeItem !== undefined ? `/${beforeItem?.path}` : '#'}
           passHref
         >
-          <a style={beforeItem === undefined ? { pointerEvents: 'none' } : {}}>
+          <a
+            className="navigation-text"
+            style={
+              beforeItem === undefined
+                ? {
+                    pointerEvents: 'none',
+                    cursor: 'not-allowed',
+                    alignItems: 'flex-start',
+                  }
+                : {
+                    alignItems: 'flex-start',
+                  }
+            }
+          >
+            <span>{beforeItem?.title || 'Started'}</span>
             Previous Page
           </a>
         </Link>
@@ -69,12 +93,20 @@ const Footer = () => {
           passHref
         >
           <a
+            className="navigation-text"
             style={
               afterItem === undefined
-                ? { pointerEvents: 'none', cursor: 'not-allowed' }
-                : {}
+                ? {
+                    pointerEvents: 'none',
+                    cursor: 'not-allowed',
+                    alignItems: 'flex-end',
+                  }
+                : {
+                    alignItems: 'flex-end',
+                  }
             }
           >
+            <span>{afterItem?.title || 'Ended'}</span>
             Next Page
           </a>
         </Link>
