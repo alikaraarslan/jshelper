@@ -133,33 +133,33 @@ export const sidebarMenuItems = [
       },
     ],
   },
-  // {
-  //   id: 3,
-  //   title: 'JavaScript Arrays Sheet',
-  //   key: 'arrays',
-  //   subItem: [
-  //     {
-  //       id: '3.1',
-  //       title: 'Assigning array items to variables',
-  //       path: '/helpers/arrays/assigning-array-items-to-variables',
-  //     },
-  //     {
-  //       id: '3.2',
-  //       title: 'Skipping items',
-  //       path: '/helpers/arrays/skipping-items',
-  //     },
-  //     {
-  //       id: '3.3',
-  //       title: 'Assigning the first values, storing the rest together',
-  //       path: '/helpers/arrays/assigning-the-first-values-storing-the-rest-together',
-  //     },
-  //     {
-  //       id: '3.4',
-  //       title: 'Swapping variables',
-  //       path: '/helpers/arrays/swapping-variables',
-  //     },
-  //   ],
-  // },
+  {
+    id: 3,
+    title: 'JavaScript Arrays Sheet',
+    key: 'arrays',
+    subItem: [
+      {
+        id: '3.1',
+        title: 'Assigning array items to variables',
+        path: '/helpers/arrays/assigning-array-items-to-variables',
+      },
+      // {
+      //   id: '3.2',
+      //   title: 'Skipping items',
+      //   path: '/helpers/arrays/skipping-items',
+      // },
+      // {
+      //   id: '3.3',
+      //   title: 'Assigning the first values, storing the rest together',
+      //   path: '/helpers/arrays/assigning-the-first-values-storing-the-rest-together',
+      // },
+      // {
+      //   id: '3.4',
+      //   title: 'Swapping variables',
+      //   path: '/helpers/arrays/swapping-variables',
+      // },
+    ],
+  },
   // {
   //   id: 4,
   //   title: 'JavaScript Strings Sheet',
