@@ -143,11 +143,11 @@ export const sidebarMenuItems = [
         title: 'Assigning array items to variables',
         path: '/helpers/arrays/assigning-array-items-to-variables',
       },
-      // {
-      //   id: '3.2',
-      //   title: 'Skipping items',
-      //   path: '/helpers/arrays/skipping-items',
-      // },
+      {
+        id: '3.2',
+        title: 'Skipping items',
+        path: '/helpers/arrays/skipping-items',
+      },
       // {
       //   id: '3.3',
       //   title: 'Assigning the first values, storing the rest together',
