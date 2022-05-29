@@ -148,11 +148,11 @@ export const sidebarMenuItems = [
         title: 'Skipping items',
         path: '/helpers/arrays/skipping-items',
       },
-      // {
-      //   id: '3.3',
-      //   title: 'Assigning the first values, storing the rest together',
-      //   path: '/helpers/arrays/assigning-the-first-values-storing-the-rest-together',
-      // },
+      {
+        id: '3.3',
+        title: 'Assigning the first values, storing the rest together',
+        path: '/helpers/arrays/assigning-the-first-values-storing-the-rest-together',
+      },
       // {
       //   id: '3.4',
       //   title: 'Swapping variables',

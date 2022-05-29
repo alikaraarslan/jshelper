@@ -8,7 +8,7 @@ const SkippingItems = () => {
       <div className="desc">
         <div className="code-block">
           <CopyBlock
-            text={`onst [, b] = [123, 'second', true];
+            text={`const [, b] = [123, 'second', true];
 // b => 'second'`}
             language={'javascript'}
             showLineNumbers={false}
