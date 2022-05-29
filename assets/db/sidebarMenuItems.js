@@ -153,11 +153,11 @@ export const sidebarMenuItems = [
         title: 'Assigning the first values, storing the rest together',
         path: '/helpers/arrays/assigning-the-first-values-storing-the-rest-together',
       },
-      // {
-      //   id: '3.4',
-      //   title: 'Swapping variables',
-      //   path: '/helpers/arrays/swapping-variables',
-      // },
+      {
+        id: '3.4',
+        title: 'Swapping variables',
+        path: '/helpers/arrays/swapping-variables',
+      },
     ],
   },
   // {
