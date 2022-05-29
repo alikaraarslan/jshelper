@@ -170,11 +170,11 @@ export const sidebarMenuItems = [
         title: 'charAt()',
         path: '/helpers/strings/char-at',
       },
-      // {
-      //   id: '4.2',
-      //   title: 'concat()',
-      //   path: '/helpers/strings/concat',
-      // },
+      {
+        id: '4.2',
+        title: 'concat()',
+        path: '/helpers/strings/concat',
+      },
       // {
       //   id: '4.3',
       //   title: 'indexOf()',

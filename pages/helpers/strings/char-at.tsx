@@ -1,4 +1,3 @@
-import React from 'react';
 import { CopyBlock, vs2015 } from 'react-code-blocks';
 
 const ChartAt = () => {
