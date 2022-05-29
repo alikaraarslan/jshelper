@@ -160,103 +160,103 @@ export const sidebarMenuItems = [
       },
     ],
   },
-  // {
-  //   id: 4,
-  //   title: 'JavaScript Strings Sheet',
-  //   key: 'strings',
-  //   subItem: [
-  //     {
-  //       id: '4.1',
-  //       title: 'charAt()',
-  //       path: '/helpers/strings/char-at',
-  //     },
-  //     {
-  //       id: '4.2',
-  //       title: 'concat()',
-  //       path: '/helpers/strings/concat',
-  //     },
-  //     {
-  //       id: '4.3',
-  //       title: 'indexOf()',
-  //       path: '/helpers/strings/index-of',
-  //     },
-  //     {
-  //       id: '4.4',
-  //       title: 'lastIndexOf()',
-  //       path: '/helpers/strings/last-index-of',
-  //     },
-  //     {
-  //       id: '4.5',
-  //       title: 'replace()',
-  //       path: '/helpers/strings/replace',
-  //     },
-  //     {
-  //       id: '4.6',
-  //       title: 'search()',
-  //       path: '/helpers/strings/search',
-  //     },
-  //     {
-  //       id: '4.7',
-  //       title: 'slice(start, end)',
-  //       path: '/helpers/strings/slice',
-  //     },
-  //     {
-  //       id: '4.8',
-  //       title: 'substr(start, length)',
-  //       path: '/helpers/strings/substr',
-  //     },
-  //     {
-  //       id: '4.9',
-  //       title: 'substring(start, end)',
-  //       path: '/helpers/strings/substring',
-  //     },
-  //     {
-  //       id: '5.0',
-  //       title: 'toUpperCase()',
-  //       path: '/helpers/strings/to-upper-case',
-  //     },
-  //     {
-  //       id: '5.1',
-  //       title: 'toLowerCase()',
-  //       path: '/helpers/strings/to-lower-case',
-  //     },
-  //     {
-  //       id: '5.2',
-  //       title: 'valueOf()',
-  //       path: '/helpers/strings/value-of',
-  //     },
-  //     {
-  //       id: '5.3',
-  //       title: 'trim()',
-  //       path: '/helpers/strings/trim',
-  //     },
-  //     {
-  //       id: '5.4',
-  //       title: 'toString()',
-  //       path: '/helpers/strings/to-string',
-  //     },
-  //     {
-  //       id: '5.5',
-  //       title: 'includes()',
-  //       path: '/helpers/strings/includes',
-  //     },
-  //     {
-  //       id: '5.6',
-  //       title: 'charCodeAt()',
-  //       path: '/helpers/strings/char-code-at',
-  //     },
-  //     {
-  //       id: '5.7',
-  //       title: 'match()',
-  //       path: '/helpers/strings/match',
-  //     },
-  //     {
-  //       id: '5.8',
-  //       title: 'split()',
-  //       path: '/helpers/strings/split',
-  //     },
-  //   ],
-  // },
+  {
+    id: 4,
+    title: 'JavaScript Strings Sheet',
+    key: 'strings',
+    subItem: [
+      {
+        id: '4.1',
+        title: 'charAt()',
+        path: '/helpers/strings/char-at',
+      },
+      // {
+      //   id: '4.2',
+      //   title: 'concat()',
+      //   path: '/helpers/strings/concat',
+      // },
+      // {
+      //   id: '4.3',
+      //   title: 'indexOf()',
+      //   path: '/helpers/strings/index-of',
+      // },
+      // {
+      //   id: '4.4',
+      //   title: 'lastIndexOf()',
+      //   path: '/helpers/strings/last-index-of',
+      // },
+      // {
+      //   id: '4.5',
+      //   title: 'replace()',
+      //   path: '/helpers/strings/replace',
+      // },
+      // {
+      //   id: '4.6',
+      //   title: 'search()',
+      //   path: '/helpers/strings/search',
+      // },
+      // {
+      //   id: '4.7',
+      //   title: 'slice(start, end)',
+      //   path: '/helpers/strings/slice',
+      // },
+      // {
+      //   id: '4.8',
+      //   title: 'substr(start, length)',
+      //   path: '/helpers/strings/substr',
+      // },
+      // {
+      //   id: '4.9',
+      //   title: 'substring(start, end)',
+      //   path: '/helpers/strings/substring',
+      // },
+      // {
+      //   id: '5.0',
+      //   title: 'toUpperCase()',
+      //   path: '/helpers/strings/to-upper-case',
+      // },
+      // {
+      //   id: '5.1',
+      //   title: 'toLowerCase()',
+      //   path: '/helpers/strings/to-lower-case',
+      // },
+      // {
+      //   id: '5.2',
+      //   title: 'valueOf()',
+      //   path: '/helpers/strings/value-of',
+      // },
+      // {
+      //   id: '5.3',
+      //   title: 'trim()',
+      //   path: '/helpers/strings/trim',
+      // },
+      // {
+      //   id: '5.4',
+      //   title: 'toString()',
+      //   path: '/helpers/strings/to-string',
+      // },
+      // {
+      //   id: '5.5',
+      //   title: 'includes()',
+      //   path: '/helpers/strings/includes',
+      // },
+      // {
+      //   id: '5.6',
+      //   title: 'charCodeAt()',
+      //   path: '/helpers/strings/char-code-at',
+      // },
+      // {
+      //   id: '5.7',
+      //   title: 'match()',
+      //   path: '/helpers/strings/match',
+      // },
+      // {
+      //   id: '5.8',
+      //   title: 'split()',
+      //   path: '/helpers/strings/split',
+      // },
+    ],
+  },
   // {
   //   id: 5,
   //   title: 'JavaScript Async/Await',
