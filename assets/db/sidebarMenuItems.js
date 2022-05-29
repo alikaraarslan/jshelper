@@ -175,11 +175,11 @@ export const sidebarMenuItems = [
         title: 'concat()',
         path: '/helpers/strings/concat',
       },
-      // {
-      //   id: '4.3',
-      //   title: 'indexOf()',
-      //   path: '/helpers/strings/index-of',
-      // },
+      {
+        id: '4.3',
+        title: 'indexOf()',
+        path: '/helpers/strings/index-of',
+      },
       // {
       //   id: '4.4',
       //   title: 'lastIndexOf()',
