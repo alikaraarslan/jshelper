@@ -180,11 +180,11 @@ export const sidebarMenuItems = [
         title: 'indexOf()',
         path: '/helpers/strings/index-of',
       },
-      // {
-      //   id: '4.4',
-      //   title: 'lastIndexOf()',
-      //   path: '/helpers/strings/last-index-of',
-      // },
+      {
+        id: '4.4',
+        title: 'lastIndexOf()',
+        path: '/helpers/strings/last-index-of',
+      },
       // {
       //   id: '4.5',
       //   title: 'replace()',
