@@ -190,11 +190,11 @@ export const sidebarMenuItems = [
         title: 'replace()',
         path: '/helpers/strings/replace',
       },
-      // {
-      //   id: '4.6',
-      //   title: 'search()',
-      //   path: '/helpers/strings/search',
-      // },
+      {
+        id: '4.6',
+        title: 'search()',
+        path: '/helpers/strings/search',
+      },
       // {
       //   id: '4.7',
       //   title: 'slice(start, end)',
