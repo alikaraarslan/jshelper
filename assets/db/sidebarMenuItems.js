@@ -205,11 +205,11 @@ export const sidebarMenuItems = [
         title: 'substr(start, length)',
         path: '/helpers/strings/substr',
       },
-      // {
-      //   id: '4.9',
-      //   title: 'substring(start, end)',
-      //   path: '/helpers/strings/substring',
-      // },
+      {
+        id: '4.9',
+        title: 'substring(start, end)',
+        path: '/helpers/strings/substring',
+      },
       // {
       //   id: '5.0',
       //   title: 'toUpperCase()',
