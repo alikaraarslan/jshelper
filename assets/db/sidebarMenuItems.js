@@ -200,11 +200,11 @@ export const sidebarMenuItems = [
         title: 'slice(start, end)',
         path: '/helpers/strings/slice',
       },
-      // {
-      //   id: '4.8',
-      //   title: 'substr(start, length)',
-      //   path: '/helpers/strings/substr',
-      // },
+      {
+        id: '4.8',
+        title: 'substr(start, length)',
+        path: '/helpers/strings/substr',
+      },
       // {
       //   id: '4.9',
       //   title: 'substring(start, end)',
