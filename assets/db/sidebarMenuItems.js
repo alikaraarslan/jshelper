@@ -220,11 +220,11 @@ export const sidebarMenuItems = [
         title: 'toLowerCase()',
         path: '/helpers/strings/to-lower-case',
       },
-      // {
-      //   id: '5.2',
-      //   title: 'valueOf()',
-      //   path: '/helpers/strings/value-of',
-      // },
+      {
+        id: '5.2',
+        title: 'valueOf()',
+        path: '/helpers/strings/value-of',
+      },
       // {
       //   id: '5.3',
       //   title: 'trim()',
