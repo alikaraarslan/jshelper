@@ -240,11 +240,11 @@ export const sidebarMenuItems = [
         title: 'includes()',
         path: '/helpers/strings/includes',
       },
-      // {
-      //   id: '5.6',
-      //   title: 'charCodeAt()',
-      //   path: '/helpers/strings/char-code-at',
-      // },
+      {
+        id: '5.6',
+        title: 'charCodeAt()',
+        path: '/helpers/strings/char-code-at',
+      },
       // {
       //   id: '5.7',
       //   title: 'match()',
