@@ -245,11 +245,11 @@ export const sidebarMenuItems = [
         title: 'charCodeAt()',
         path: '/helpers/strings/char-code-at',
       },
-      // {
-      //   id: '5.7',
-      //   title: 'match()',
-      //   path: '/helpers/strings/match',
-      // },
+      {
+        id: '5.7',
+        title: 'match()',
+        path: '/helpers/strings/match',
+      },
       // {
       //   id: '5.8',
       //   title: 'split()',
