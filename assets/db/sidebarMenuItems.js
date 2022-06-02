@@ -250,11 +250,11 @@ export const sidebarMenuItems = [
         title: 'match()',
         path: '/helpers/strings/match',
       },
-      // {
-      //   id: '5.8',
-      //   title: 'split()',
-      //   path: '/helpers/strings/split',
-      // },
+      {
+        id: '5.8',
+        title: 'split()',
+        path: '/helpers/strings/split',
+      },
     ],
   },
   // {
