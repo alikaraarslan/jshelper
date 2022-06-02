@@ -230,11 +230,11 @@ export const sidebarMenuItems = [
         title: 'trim()',
         path: '/helpers/strings/trim',
       },
-      // {
-      //   id: '5.4',
-      //   title: 'toString()',
-      //   path: '/helpers/strings/to-string',
-      // },
+      {
+        id: '5.4',
+        title: 'toString()',
+        path: '/helpers/strings/to-string',
+      },
       // {
       //   id: '5.5',
       //   title: 'includes()',
