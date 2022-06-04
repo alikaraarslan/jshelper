@@ -267,11 +267,11 @@ export const sidebarMenuItems = [
         title: 'Async',
         path: '/helpers/async-await/async',
       },
-      // {
-      //   id: '5.2',
-      //   title: 'Await',
-      //   path: '/helpers/async-await/await',
-      // },
+      {
+        id: '5.2',
+        title: 'Await',
+        path: '/helpers/async-await/await',
+      },
     ],
   },
   // {
