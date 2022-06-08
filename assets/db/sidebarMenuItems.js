@@ -299,11 +299,11 @@ export const sidebarMenuItems = [
         title: 'JQuery AJAX',
         path: '/helpers/api-calls/jquery-ajax',
       },
-      // {
-      //   id: '6.5',
-      //   title: 'useSwr',
-      //   path: '/helpers/api-calls/use-swr',
-      // },
+      {
+        id: '6.5',
+        title: 'useSwr',
+        path: '/helpers/api-calls/use-swr',
+      },
     ],
   },
 ];
