@@ -289,11 +289,11 @@ export const sidebarMenuItems = [
         title: 'Fetch',
         path: '/helpers/api-calls/fetch',
       },
-      // {
-      //   id: '6.3',
-      //   title: 'Axios',
-      //   path: '/helpers/api-calls/axios',
-      // },
+      {
+        id: '6.3',
+        title: 'Axios',
+        path: '/helpers/api-calls/axios',
+      },
       // {
       //   id: '6.4',
       //   title: 'JQuery AJAX',
