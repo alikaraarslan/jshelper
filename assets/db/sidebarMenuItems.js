@@ -284,11 +284,11 @@ export const sidebarMenuItems = [
         title: 'XML HTTP Request',
         path: '/helpers/api-calls/xml-http-request',
       },
-      // {
-      //   id: '6.2',
-      //   title: 'Fetch',
-      //   path: '/helpers/api-calls/fetch',
-      // },
+      {
+        id: '6.2',
+        title: 'Fetch',
+        path: '/helpers/api-calls/fetch',
+      },
       // {
       //   id: '6.3',
       //   title: 'Axios',
