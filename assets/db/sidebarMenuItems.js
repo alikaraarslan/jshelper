@@ -294,11 +294,11 @@ export const sidebarMenuItems = [
         title: 'Axios',
         path: '/helpers/api-calls/axios',
       },
-      // {
-      //   id: '6.4',
-      //   title: 'JQuery AJAX',
-      //   path: '/helpers/api-calls/jquery-ajax',
-      // },
+      {
+        id: '6.4',
+        title: 'JQuery AJAX',
+        path: '/helpers/api-calls/jquery-ajax',
+      },
       // {
       //   id: '6.5',
       //   title: 'useSwr',
