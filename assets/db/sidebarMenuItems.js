@@ -163,6 +163,11 @@ export const sidebarMenuItems = [
         title: 'Unshift()',
         path: '/helpers/arrays/unshift',
       },
+      {
+        id: '3.6',
+        title: 'shift()',
+        path: '/helpers/arrays/shift',
+      },
     ],
   },
   {
