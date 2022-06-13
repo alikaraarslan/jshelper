@@ -158,6 +158,11 @@ export const sidebarMenuItems = [
         title: 'Swapping variables',
         path: '/helpers/arrays/swapping-variables',
       },
+      {
+        id: '3.5',
+        title: 'Unshift()',
+        path: '/helpers/arrays/unshift',
+      },
     ],
   },
   {
