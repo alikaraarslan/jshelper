@@ -168,6 +168,11 @@ export const sidebarMenuItems = [
         title: 'shift()',
         path: '/helpers/arrays/shift',
       },
+      {
+        id: '3.7',
+        title: 'concat()',
+        path: '/helpers/arrays/concat',
+      },
     ],
   },
   {
