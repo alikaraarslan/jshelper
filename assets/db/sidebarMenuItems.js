@@ -173,6 +173,11 @@ export const sidebarMenuItems = [
         title: 'concat()',
         path: '/helpers/arrays/concat',
       },
+      {
+        id: '3.8',
+        title: 'copyWithin()',
+        path: '/helpers/arrays/copyWithin',
+      },
     ],
   },
   {
