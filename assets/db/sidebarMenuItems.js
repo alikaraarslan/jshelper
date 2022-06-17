@@ -203,6 +203,16 @@ export const sidebarMenuItems = [
         title: 'find()',
         path: '/helpers/arrays/find',
       },
+      {
+        id: '4.4',
+        title: 'find()',
+        path: '/helpers/arrays/findIndex',
+      },
+      {
+        id: '4.5',
+        title: 'flat()',
+        path: '/helpers/arrays/flat',
+      },
     ],
   },
   {
