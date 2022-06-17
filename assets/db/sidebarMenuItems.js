@@ -198,6 +198,11 @@ export const sidebarMenuItems = [
         title: 'filter()',
         path: '/helpers/arrays/filter',
       },
+      {
+        id: '4.3',
+        title: 'find()',
+        path: '/helpers/arrays/find',
+      },
     ],
   },
   {
