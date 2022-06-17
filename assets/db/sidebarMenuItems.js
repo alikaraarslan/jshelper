@@ -183,6 +183,11 @@ export const sidebarMenuItems = [
         title: 'entries()',
         path: '/helpers/arrays/entries',
       },
+      {
+        id: '4.0',
+        title: 'every()',
+        path: '/helpers/arrays/every',
+      },
     ],
   },
   {
