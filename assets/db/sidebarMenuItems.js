@@ -213,6 +213,11 @@ export const sidebarMenuItems = [
         title: 'flat()',
         path: '/helpers/arrays/flat',
       },
+      {
+        id: '4.6',
+        title: 'flatMap()',
+        path: '/helpers/arrays/flatMap',
+      },
     ],
   },
   {
