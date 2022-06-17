@@ -178,6 +178,11 @@ export const sidebarMenuItems = [
         title: 'copyWithin()',
         path: '/helpers/arrays/copyWithin',
       },
+      {
+        id: '3.9',
+        title: 'entries()',
+        path: '/helpers/arrays/entries',
+      },
     ],
   },
   {
