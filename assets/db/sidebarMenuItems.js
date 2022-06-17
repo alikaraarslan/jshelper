@@ -188,6 +188,11 @@ export const sidebarMenuItems = [
         title: 'every()',
         path: '/helpers/arrays/every',
       },
+      {
+        id: '4.1',
+        title: 'fill()',
+        path: '/helpers/arrays/fill',
+      },
     ],
   },
   {
