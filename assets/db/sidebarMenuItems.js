@@ -238,6 +238,11 @@ export const sidebarMenuItems = [
         title: 'indexOf()',
         path: '/helpers/arrays/indexOf',
       },
+      {
+        id: '5.1',
+        title: 'isArray()',
+        path: '/helpers/arrays/isArray',
+      },
     ],
   },
   {
