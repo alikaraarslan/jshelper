@@ -253,6 +253,11 @@ export const sidebarMenuItems = [
         title: 'lastIndexOf()',
         path: '/helpers/arrays/lastIndexOf',
       },
+      {
+        id: '5.4',
+        title: 'length()',
+        path: '/helpers/arrays/length',
+      },
     ],
   },
   {
