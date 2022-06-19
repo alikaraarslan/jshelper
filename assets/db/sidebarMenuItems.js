@@ -258,6 +258,11 @@ export const sidebarMenuItems = [
         title: 'length()',
         path: '/helpers/arrays/length',
       },
+      {
+        id: '5.5',
+        title: 'map()',
+        path: '/helpers/arrays/map',
+      },
     ],
   },
   {
