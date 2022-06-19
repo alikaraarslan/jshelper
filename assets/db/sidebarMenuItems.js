@@ -248,6 +248,11 @@ export const sidebarMenuItems = [
         title: 'join()',
         path: '/helpers/arrays/join',
       },
+      {
+        id: '5.3',
+        title: 'lastIndexOf()',
+        path: '/helpers/arrays/lastIndexOf',
+      },
     ],
   },
   {
