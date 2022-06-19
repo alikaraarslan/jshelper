@@ -228,6 +228,11 @@ export const sidebarMenuItems = [
         title: 'from()',
         path: '/helpers/arrays/from',
       },
+      {
+        id: '4.8',
+        title: 'includes()',
+        path: '/helpers/arrays/includes',
+      },
     ],
   },
   {
