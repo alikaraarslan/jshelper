@@ -278,6 +278,11 @@ export const sidebarMenuItems = [
         title: 'push()',
         path: '/helpers/arrays/push',
       },
+      {
+        id: '5.8',
+        title: 'reduce()',
+        path: '/helpers/arrays/reduce',
+      },
     ],
   },
   {
