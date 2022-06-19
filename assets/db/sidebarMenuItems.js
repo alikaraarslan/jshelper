@@ -229,9 +229,14 @@ export const sidebarMenuItems = [
         path: '/helpers/arrays/from',
       },
       {
-        id: '4.8',
+        id: '4.9',
         title: 'includes()',
         path: '/helpers/arrays/includes',
+      },
+      {
+        id: '5.0',
+        title: 'indexOf()',
+        path: '/helpers/arrays/indexOf',
       },
     ],
   },
