@@ -223,6 +223,11 @@ export const sidebarMenuItems = [
         title: 'forEach()',
         path: '/helpers/arrays/forEach',
       },
+      {
+        id: '4.8',
+        title: 'from()',
+        path: '/helpers/arrays/from',
+      },
     ],
   },
   {
