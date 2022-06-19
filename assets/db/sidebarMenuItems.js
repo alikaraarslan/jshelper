@@ -205,7 +205,7 @@ export const sidebarMenuItems = [
       },
       {
         id: '4.4',
-        title: 'find()',
+        title: 'findIndex()',
         path: '/helpers/arrays/findIndex',
       },
       {
@@ -217,6 +217,11 @@ export const sidebarMenuItems = [
         id: '4.6',
         title: 'flatMap()',
         path: '/helpers/arrays/flatMap',
+      },
+      {
+        id: '4.7',
+        title: 'forEach()',
+        path: '/helpers/arrays/forEach',
       },
     ],
   },
