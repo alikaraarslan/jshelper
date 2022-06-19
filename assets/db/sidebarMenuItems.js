@@ -243,6 +243,11 @@ export const sidebarMenuItems = [
         title: 'isArray()',
         path: '/helpers/arrays/isArray',
       },
+      {
+        id: '5.2',
+        title: 'join()',
+        path: '/helpers/arrays/join',
+      },
     ],
   },
   {
