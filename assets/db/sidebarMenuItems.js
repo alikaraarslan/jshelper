@@ -273,6 +273,11 @@ export const sidebarMenuItems = [
         title: 'pop()',
         path: '/helpers/arrays/pop',
       },
+      {
+        id: '5.8',
+        title: 'push()',
+        path: '/helpers/arrays/push',
+      },
     ],
   },
   {
