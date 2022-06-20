@@ -288,6 +288,11 @@ export const sidebarMenuItems = [
         title: 'reduceRight()',
         path: '/helpers/arrays/reduce-right',
       },
+      {
+        id: '6.0',
+        title: 'reverse()',
+        path: '/helpers/arrays/reverse',
+      },
     ],
   },
   {
