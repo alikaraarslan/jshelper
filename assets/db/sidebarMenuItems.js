@@ -293,6 +293,11 @@ export const sidebarMenuItems = [
         title: 'reverse()',
         path: '/helpers/arrays/reverse',
       },
+      {
+        id: '6.1',
+        title: 'slice()',
+        path: '/helpers/arrays/slice',
+      },
     ],
   },
   {
