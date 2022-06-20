@@ -283,6 +283,11 @@ export const sidebarMenuItems = [
         title: 'reduce()',
         path: '/helpers/arrays/reduce',
       },
+      {
+        id: '5.9',
+        title: 'reduceRight()',
+        path: '/helpers/arrays/reduce-right',
+      },
     ],
   },
   {
