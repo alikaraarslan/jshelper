@@ -303,6 +303,11 @@ export const sidebarMenuItems = [
         title: 'some()',
         path: '/helpers/arrays/some',
       },
+      {
+        id: '6.3',
+        title: 'sort()',
+        path: '/helpers/arrays/sort',
+      },
     ],
   },
   {
