@@ -298,6 +298,11 @@ export const sidebarMenuItems = [
         title: 'slice()',
         path: '/helpers/arrays/slice',
       },
+      {
+        id: '6.2',
+        title: 'some()',
+        path: '/helpers/arrays/some',
+      },
     ],
   },
   {
