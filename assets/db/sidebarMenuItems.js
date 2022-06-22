@@ -313,6 +313,11 @@ export const sidebarMenuItems = [
         title: 'splice()',
         path: '/helpers/arrays/splice',
       },
+      {
+        id: '6.5',
+        title: 'toLocaleString()',
+        path: '/helpers/arrays/toLocaleString',
+      },
     ],
   },
   {
