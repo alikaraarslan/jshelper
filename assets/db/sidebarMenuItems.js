@@ -308,6 +308,11 @@ export const sidebarMenuItems = [
         title: 'sort()',
         path: '/helpers/arrays/sort',
       },
+      {
+        id: '6.4',
+        title: 'splice()',
+        path: '/helpers/arrays/splice',
+      },
     ],
   },
   {
