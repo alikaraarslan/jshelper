@@ -318,6 +318,11 @@ export const sidebarMenuItems = [
         title: 'toLocaleString()',
         path: '/helpers/arrays/toLocaleString',
       },
+      {
+        id: '6.6',
+        title: 'toString()',
+        path: '/helpers/arrays/toString',
+      },
     ],
   },
   {
