@@ -7,7 +7,8 @@ const Values = () => {
       <h2>Values()</h2>
       <div className="desc">
         <p>
-        The values() method returns a new Array Iterator object that contains the values for each index in the array.
+          The values() method returns a new Array Iterator object that contains
+          the values for each index in the array.
         </p>
         <div className="code-block">
           <CopyBlock
@@ -24,6 +25,25 @@ for (let value of iteratorObject) {
 // JavaScript
 // Java
 // C++`}
+            language={'javascript'}
+            showLineNumbers={false}
+            theme={vs2015}
+          />
+        </div>
+        <div className="code-block">
+          <CopyBlock
+            text={`let languages = ["A", "B", "C"];
+// returns an iterator object that contain values of languages
+let iteratorObject = languages.values();
+
+// looping through iterator
+for (let value of iteratorObject) {
+  console.log(value);
+}
+Output:
+A
+B
+C`}
             language={'javascript'}
             showLineNumbers={false}
             theme={vs2015}
