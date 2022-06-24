@@ -1,16 +1,6 @@
-import styled from 'styled-components';
-import Search from './Search';
-import Theme from './Theme';
-
-const HeaderWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: calc(100% - 40px);
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 12px;
-`;
+import Search from '../Search/Search';
+import Theme from '../Theme/Theme';
+import HeaderWrapper from './style';
 
 type Props = {
   toggleTheme: () => void;

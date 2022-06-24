@@ -1,32 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
-import { sidebarMenuItems } from '../assets/db/sidebarMenuItems';
-
-const FooterWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 12px;
-  .btn-navigation {
-    .navigation-text {
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-      border-radius: 8px;
-      height: 60px;
-      padding: 15px;
-      transition: 300ms;
-      span {
-        font-size: 12px;
-        opacity: 0.7;
-        margin-bottom: 4px;
-      }
-    }
-  }
-`;
+import { sidebarMenuItems } from '../../assets/db/sidebarMenuItems';
+import FooterWrapper from './style';
 
 const Footer = () => {
   const router = useRouter();
@@ -45,13 +21,10 @@ const Footer = () => {
     (f) => f.id === beforeItemId.toFixed(1)
   );
 
-  console.log('beforeItem', beforeItem);
-
   const afterItemId = Number(activeItem?.id) + Number(0.1);
   const afterItem = currentMenuItem?.subItem?.find(
     (f) => f.id === afterItemId.toFixed(1)
   );
-  console.log('afterItem', afterItem);
 
   const isVisibleFooter = pathname !== '/';
   if (!isVisibleFooter) return null;
