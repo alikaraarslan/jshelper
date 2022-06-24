@@ -1,10 +1,13 @@
 import Layout from '../components/Layout/Layout';
-
+import { Provider } from 'react-redux';
+import { store } from '../contexts/store';
 function MyApp({ Component, pageProps }: any) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <Provider store={store}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Provider>
   );
 }
 
