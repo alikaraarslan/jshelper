@@ -16,6 +16,10 @@ export const SidebarWrapper = styled.div`
   .sidebar-content {
     width: 100%;
   }
+  .search-container {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 `;
 
 export const CollapseWrapper = styled<any>(Collapse)`

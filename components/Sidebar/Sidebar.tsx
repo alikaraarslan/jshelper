@@ -4,6 +4,7 @@ require('rc-collapse/assets/index.css');
 import motion from '../../utils/motionUtil';
 import { sidebarMenuItems } from '../../assets/db/sidebarMenuItems';
 import { CollapseWrapper, SidebarWrapper } from './style';
+import Search from '../Search/Search';
 
 const arrowPath =
   'M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88' +
@@ -34,10 +35,8 @@ const expandIcon = ({ isActive }: any) => {
 const Sidebar = ({ theme }: any) => {
   return (
     <SidebarWrapper theme={theme} className="sidebar">
-      <div className="title">
-        <Link href="/">
-          <a>Js Helper</a>
-        </Link>
+      <div className="search-container">
+        <Search />
       </div>
       <div className="sidebar-content">
         <CollapseWrapper

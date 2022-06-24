@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 const SearchWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   input {
     border: none;
@@ -12,6 +10,7 @@ const SearchWrapper = styled.div`
     padding: 0 10px;
     border-radius: 8px 0 0 8px;
     transition: 300ms;
+    width: 100%;
     ::placeholder {
       opacity: 0.6;
       transition: 300ms;

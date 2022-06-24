@@ -1,4 +1,4 @@
-import Search from '../Search/Search';
+import Link from 'next/link';
 import Theme from '../Theme/Theme';
 import HeaderWrapper from './style';
 
@@ -10,7 +10,11 @@ type Props = {
 const Header = ({ toggleTheme, isDarkTheme }: Props) => {
   return (
     <HeaderWrapper className="header">
-      <Search />
+      <div className="title">
+        <Link href="/">
+          <a>Js Helper</a>
+        </Link>
+      </div>
       <Theme toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
     </HeaderWrapper>
   );

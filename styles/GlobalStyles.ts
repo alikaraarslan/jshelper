@@ -58,19 +58,19 @@ const GlobalStyle = createGlobalStyle(({ theme }: any) => ({
         },
       },
     },
-    '.search': {
-      input: {
-        background: theme.bg,
+  },
+  '.search': {
+    input: {
+      background: theme.bg,
+      color: darken(0.15, theme.text),
+      '::placeholder': {
         color: darken(0.15, theme.text),
-        '::placeholder': {
-          color: darken(0.15, theme.text),
-          opacity: 0.6,
-        },
+        opacity: 0.6,
       },
-      '.search-button': {
-        background: theme.bg,
-        color: darken(0.15, theme.text),
-      },
+    },
+    '.search-button': {
+      background: theme.bg,
+      color: darken(0.15, theme.text),
     },
   },
   button: {
