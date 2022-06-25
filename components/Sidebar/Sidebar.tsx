@@ -50,21 +50,16 @@ const Sidebar = ({ theme }: any) => {
       : (f: any) => f;
 
   useEffect(() => {
-    setActiveItemWithURL?.main
-      ? dispatch({
-          type: ACTIVE_JS_SUBJECT,
-          payload: {
-            activeJsMainItem: sidebarMenuItems?.[0]?.id,
-            activeJsSubItem: null,
-          },
-        })
-      : dispatch({
-          type: ACTIVE_JS_SUBJECT,
-          payload: {
-            activeJsMainItem: setActiveItemWithURL?.[0]?.main,
-            activeJsSubItem: null,
-          },
-        });
+    dispatch({
+      type: ACTIVE_JS_SUBJECT,
+      payload: {
+        activeJsMainItem: setActiveItemWithURL?.main
+          ? sidebarMenuItems?.[0]?.id
+          : setActiveItemWithURL?.[0]?.main,
+        activeJsSubItem: null,
+      },
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [setActiveItemWithURL?.main]);
 
   return (
