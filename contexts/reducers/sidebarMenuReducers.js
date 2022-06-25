@@ -1,9 +1,9 @@
 import { ACTIVE_JS_SUBJECT, PASSIVE_JS_SUBJECT } from '../types/sidebar';
 
 const initialState = {
-  isOpen: true,
-  activeJsMainItem: 1,
-  activeJsSubItem: 1,
+  isOpen: false,
+  activeJsMainItem: null,
+  activeJsSubItem: null,
 };
 
 const reducers = (state = initialState, action) => {
@@ -18,9 +18,7 @@ const reducers = (state = initialState, action) => {
     }
     case PASSIVE_JS_SUBJECT: {
       return {
-        isOpen: false,
-        activeJsMainItem: action.payload.activeJsMainItem,
-        activeJsSubItem: action.payload.activeJsSubItem,
+        ...initialState,
       };
     }
     default:

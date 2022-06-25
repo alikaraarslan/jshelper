@@ -35,8 +35,9 @@ const Footer = () => {
         style={beforeItem === undefined ? { cursor: 'not-allowed' } : {}}
       >
         <Link
-          href={beforeItem !== undefined ? `/${beforeItem?.path}` : '#'}
+          href={beforeItem !== undefined ? `${beforeItem?.path}` : `#`}
           passHref
+          prefetch={false}
         >
           <a
             className="navigation-text"
@@ -62,8 +63,9 @@ const Footer = () => {
         style={afterItem === undefined ? { cursor: 'not-allowed' } : {}}
       >
         <Link
-          href={afterItem !== undefined ? `/${afterItem?.path}` : '#'}
+          href={afterItem !== undefined ? `${afterItem?.path}` : `#`}
           passHref
+          prefetch={false}
         >
           <a
             className="navigation-text"

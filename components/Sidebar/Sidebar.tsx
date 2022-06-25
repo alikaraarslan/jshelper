@@ -5,6 +5,10 @@ import motion from '../../utils/motionUtil';
 import { sidebarMenuItems } from '../../assets/db/sidebarMenuItems';
 import { CollapseWrapper, SidebarWrapper } from './style';
 import Search from '../Search/Search';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { ACTIVE_JS_SUBJECT } from '../../contexts/types/sidebar';
+import { useSelector } from 'react-redux';
 
 const arrowPath =
   'M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88' +
@@ -33,6 +37,36 @@ const expandIcon = ({ isActive }: any) => {
 };
 
 const Sidebar = ({ theme }: any) => {
+  const dispatch = useDispatch();
+  const activeItem = useSelector((state: any) => state?.sidebarMenuReducers);
+
+  const setActiveItemWithURL: any =
+    typeof window !== 'undefined'
+      ? sidebarMenuItems.flatMap((item: any) =>
+          item.subItem.filter(
+            (subItem: any) => subItem.path === window?.location?.pathname
+          )
+        )
+      : (f: any) => f;
+
+  useEffect(() => {
+    setActiveItemWithURL?.main
+      ? dispatch({
+          type: ACTIVE_JS_SUBJECT,
+          payload: {
+            activeJsMainItem: sidebarMenuItems?.[0]?.id,
+            activeJsSubItem: null,
+          },
+        })
+      : dispatch({
+          type: ACTIVE_JS_SUBJECT,
+          payload: {
+            activeJsMainItem: setActiveItemWithURL?.[0]?.main,
+            activeJsSubItem: null,
+          },
+        });
+  }, [setActiveItemWithURL?.main]);
+
   return (
     <SidebarWrapper theme={theme} className="sidebar">
       <div className="search-container">
@@ -43,8 +77,19 @@ const Sidebar = ({ theme }: any) => {
           theme={theme}
           accordion={true}
           openMotion={motion || null}
-          defaultActiveKey={1}
+          defaultActiveKey={
+            setActiveItemWithURL?.[0]?.main || activeItem.activeJsMainItem
+          }
           expandIcon={expandIcon}
+          onChange={(e: string | number) => {
+            dispatch({
+              type: ACTIVE_JS_SUBJECT,
+              payload: {
+                activeJsMainItem: Number(e),
+                activeJsSubItem: null,
+              },
+            });
+          }}
         >
           {sidebarMenuItems.map((item: any, idx: number) => (
             <Panel
