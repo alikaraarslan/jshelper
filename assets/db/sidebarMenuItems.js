@@ -557,4 +557,17 @@ export const sidebarMenuItems = [
       },
     ],
   },
+  {
+    id: 7,
+    title: 'Javascript Data Types',
+    key: 'data-types',
+    subItem: [
+      {
+        id: '7.1',
+        title: 'Boolean',
+        path: '/helpers/data-types/boolean',
+        main: 7,
+      },
+    ],
+  },
 ];
