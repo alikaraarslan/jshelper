@@ -31,6 +31,23 @@ console.log('hello') // true
             theme={vs2015}
           />
         </div>
+        <div className="code-block">
+          <CopyBlock
+            text={`let count = true;
+// converting to string
+let result = count.valueOf();
+
+console.log(result);
+
+console.log(typeof result);
+// Output:
+// true
+// boolean`}
+            language={'javascript'}
+            showLineNumbers={false}
+            theme={vs2015}
+          />
+        </div>
       </div>
     </div>
   );
