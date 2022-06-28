@@ -574,6 +574,12 @@ export const sidebarMenuItems = [
         path: '/helpers/data-types/string',
         main: 7,
       },
+      {
+        id: '7.3',
+        title: 'Number',
+        path: '/helpers/data-types/number',
+        main: 7,
+      },
     ],
   },
 ];
