@@ -568,6 +568,12 @@ export const sidebarMenuItems = [
         path: '/helpers/data-types/boolean',
         main: 7,
       },
+      {
+        id: '7.2',
+        title: 'String',
+        path: '/helpers/data-types/string',
+        main: 7,
+      },
     ],
   },
 ];
