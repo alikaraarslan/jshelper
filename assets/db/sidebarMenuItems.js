@@ -592,6 +592,12 @@ export const sidebarMenuItems = [
         path: '/helpers/data-types/undefined',
         main: 7,
       },
+      {
+        id: '7.6',
+        title: 'Symbol',
+        path: '/helpers/data-types/symbol',
+        main: 7,
+      },
     ],
   },
 ];
