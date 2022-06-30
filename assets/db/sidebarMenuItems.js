@@ -580,6 +580,12 @@ export const sidebarMenuItems = [
         path: '/helpers/data-types/number',
         main: 7,
       },
+      {
+        id: '7.4',
+        title: 'Null',
+        path: '/helpers/data-types/null',
+        main: 7,
+      },
     ],
   },
 ];
