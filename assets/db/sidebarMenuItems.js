@@ -598,6 +598,12 @@ export const sidebarMenuItems = [
         path: '/helpers/data-types/symbol',
         main: 7,
       },
+      {
+        id: '7.7',
+        title: 'Array',
+        path: '/helpers/data-types/array',
+        main: 7,
+      },
     ],
   },
 ];
