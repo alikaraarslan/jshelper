@@ -604,6 +604,12 @@ export const sidebarMenuItems = [
         path: '/helpers/data-types/array',
         main: 7,
       },
+      {
+        id: '7.8',
+        title: 'BigInt',
+        path: '/helpers/data-types/bigInt',
+        main: 7,
+      },
     ],
   },
 ];
