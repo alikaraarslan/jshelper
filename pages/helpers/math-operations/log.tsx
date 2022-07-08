@@ -26,6 +26,17 @@ console.log(a); // 0.6931471805599453
             theme={vs2015}
           />
         </div>
+        <p>Math.log2() returns the base 2 logarithm of a number.</p>
+        <div className="code-block">
+          <CopyBlock
+            text={`const a = Math.log2(8);
+console.log(a); // 3
+`}
+            language={'javascript'}
+            showLineNumbers={false}
+            theme={vs2015}
+          />
+        </div>
       </div>
     </div>
   );
