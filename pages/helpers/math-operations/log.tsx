@@ -37,6 +37,17 @@ console.log(a); // 3
             theme={vs2015}
           />
         </div>
+        <p>Math.log10() returns the base 10 logarithm of a number.</p>
+        <div className="code-block">
+          <CopyBlock
+            text={`const a = Math.log10(1000);
+console.log(a); // 3
+`}
+            language={'javascript'}
+            showLineNumbers={false}
+            theme={vs2015}
+          />
+        </div>
       </div>
     </div>
   );
