@@ -709,4 +709,17 @@ export const sidebarMenuItems = [
       },
     ],
   },
+  {
+    id: 9,
+    title: 'Javascript Date Formats',
+    key: 'date-formats',
+    subItem: [
+      {
+        id: '9.1',
+        title: 'ISO Dates',
+        path: '/helpers/date-formats/iso-dates',
+        main: 9,
+      },
+    ],
+  },
 ];
