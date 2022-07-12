@@ -720,6 +720,12 @@ export const sidebarMenuItems = [
         path: '/helpers/date-formats/iso-dates',
         main: 9,
       },
+      {
+        id: '9.2',
+        title: 'ISO Dates Year and Month',
+        path: '/helpers/date-formats/iso-years-and-months',
+        main: 9,
+      },
     ],
   },
 ];
