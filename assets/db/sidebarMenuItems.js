@@ -726,6 +726,12 @@ export const sidebarMenuItems = [
         path: '/helpers/date-formats/iso-years-and-months',
         main: 9,
       },
+      {
+        id: '9.3',
+        title: 'Only Year',
+        path: '/helpers/date-formats/only-year',
+        main: 9,
+      },
     ],
   },
 ];
