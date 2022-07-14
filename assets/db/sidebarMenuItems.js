@@ -732,6 +732,12 @@ export const sidebarMenuItems = [
         path: '/helpers/date-formats/only-year',
         main: 9,
       },
+      {
+        id: '9.4',
+        title: 'Date Time',
+        path: '/helpers/date-formats/date-time',
+        main: 9,
+      },
     ],
   },
 ];
