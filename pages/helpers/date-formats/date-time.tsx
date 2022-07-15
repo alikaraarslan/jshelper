@@ -16,6 +16,21 @@ console.log(d); // Wed Mar 25 2015 14:00:00 GMT+0200 (GMT+03:00)`}
             theme={vs2015}
           />
         </div>
+        <p>
+          Modify the time relative to UTC by adding +HH:MM or subtraction -HH:MM
+          to the time.
+        </p>
+
+        <div className="code-block">
+          <CopyBlock
+            text={`const d = new Date("2015-03-25T12:00:00-06:00");
+console.log(d); // Wed Mar 25 2015 06:00:00 GMT+0200 (GMT+03:00)
+`}
+            language={'javascript'}
+            showLineNumbers={false}
+            theme={vs2015}
+          />
+        </div>
       </div>
     </div>
   );
