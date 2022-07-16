@@ -384,6 +384,12 @@ export const sidebarMenuItems = [
         path: '/helpers/arrays/toString',
         main: 3,
       },
+      {
+        id: '6.7',
+        title: 'math',
+        path: '/helpers/arrays/math',
+        main: 3,
+      },
     ],
   },
   {
