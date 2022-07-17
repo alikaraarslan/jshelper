@@ -618,4 +618,17 @@ export const sidebarMenuItems = [
       },
     ],
   },
+  {
+    id: 8,
+    title: 'Javascript Math Operations',
+    key: 'math-operations',
+    subItem: [
+      {
+        id: '8.1',
+        title: 'round()',
+        path: '/helpers/math-operations/round',
+        main: 8,
+      },
+    ],
+  },
 ];
