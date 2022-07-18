@@ -629,6 +629,12 @@ export const sidebarMenuItems = [
         path: '/helpers/math-operations/round',
         main: 8,
       },
+      {
+        id: '8.2',
+        title: 'ceil()',
+        path: '/helpers/math-operations/ceil',
+        main: 8,
+      },
     ],
   },
 ];
