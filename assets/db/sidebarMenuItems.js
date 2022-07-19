@@ -635,6 +635,12 @@ export const sidebarMenuItems = [
         path: '/helpers/math-operations/ceil',
         main: 8,
       },
+      {
+        id: '8.3',
+        title: 'floor()',
+        path: '/helpers/math-operations/floor',
+        main: 8,
+      },
     ],
   },
 ];
