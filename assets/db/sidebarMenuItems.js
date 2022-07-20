@@ -643,8 +643,8 @@ export const sidebarMenuItems = [
       },
       {
         id: '8.4',
-        title: 'trunk()',
-        path: '/helpers/math-operations/trunk',
+        title: 'trunc()',
+        path: '/helpers/math-operations/trunc',
         main: 8,
       },
       {
