@@ -8,6 +8,16 @@ const Log = () => {
         <p>Math.log() returns the natural logarithm of a number:</p>
         <div className="code-block">
           <CopyBlock
+            text={`const a = Math.log(1);
+console.log(a); // 0
+`}
+            language={'javascript'}
+            showLineNumbers={false}
+            theme={vs2015}
+          />
+        </div>
+        <div className="code-block">
+          <CopyBlock
             text={`const a = Math.log(2);
 console.log(a); // 0.6931471805599453
 `}
